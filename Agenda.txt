@@ -1,0 +1,29 @@
+1- Install nodeJs
+2- Install ExpressJs
+	- Understand Package.json file
+3- Create a simple web page
+	- Understand what is a template engine
+	- Understand routes
+	- Show error jquery not installed
+	- Show error version
+	- Use a static file installing font-awesome manually
+4- Implementing React 
+	- npm install --save gulp
+	- npm install --save react browserify react react-dom reactify vinyl-source-stream
+	- load all the js from node_modules ** Show the pain of this **
+	- Browserify vendors and components with Gulp
+		-npm install -save vinyl-buffer gulp-source-maps 
+	- React from Server
+
+5- Implementing watchify and browsersync
+	- npm install --save browser-sync gulp-nodemon
+	- Show the error with the first page if this page it's not a well format page with body tag
+
+6- Using Redux ( Workout 1)
+	-- Explain Redux ( Example basic )
+	-- Explain babel
+	-- npm install --save react-redux redux
+	-- npm install --save babelify babel-preset-es2015 babel-preset-react
+	-- Remember className against class in html templates from React Components
+
+6- Creating a CRUD with MongoDB ( Workout 2)
