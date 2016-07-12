@@ -3,10 +3,6 @@ var express = require('express');
 //NPM Module to integrate Handlerbars UI template engine with Express
 var exphbs  = require('express-handlebars');
 
-//var react = require('react');
-//var DOM = require('react-dom/server');
-//var cMessage = require('./react/message');
-
 var app = express();
 
 //Declaring Express to use Handlerbars template engine with main.handlebars as
