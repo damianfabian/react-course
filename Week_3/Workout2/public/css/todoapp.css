@@ -1,4 +1,4 @@
-body { background-color:#F7F7F7; font-family: 'Open Sans', sans-serif;}
+body { background-color:#F7F7F7; font-family: 'Open Sans', sans-serif; padding-top: 70px;}
 
 /*#region Content Container */
 .content-container { background-color:#fff; padding:35px 20px; margin-bottom:20px;}
@@ -28,3 +28,14 @@ textarea { border: 1px dotted #CFCFCF !important; height: 130px !important; }
     #ul-todo > li.todo.disabled > .todo-right-side { background-color: #f7f7f7; }
       #ul-todo > li.todo.disabled > .todo-right-side > .todo-title { color: #A8A8A8; }
 /*#endregion */
+
+.header {
+        color: #36A0FF;
+        font-size: 27px;
+        padding: 10px;
+    }
+
+    .bigicon {
+        font-size: 35px;
+        color: #36A0FF;
+    }

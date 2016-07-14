@@ -32,14 +32,22 @@ app.use('/css', express.static(__dirname + '/public/css')); // redirect CSS font
 app.use('/fonts', express.static(__dirname + '/libs/font-awesome/fonts')); // redirect fonts to font-awesome
 
 app.get('/', function(req, res) {
-	res.render('index');
+	res.render("home")
 });
 
-app.get("/home", function(req, res){
+app.get("/sample1", function(req, res){
+  res.render("sample1")
+});
+
+app.get("/sample2", function(req, res){
   var ComponentFactory = React.createFactory(cMessage);
   var reactCode = DOM.renderToString(ComponentFactory());
 
-  res.render("home", {reactHtml: reactCode})
+  res.render("sample2", {reactHtml: reactCode})
+});
+
+app.get("/contact", function(req, res){
+  res.render("contact")
 });
 
 app.listen(3000, function() {
