@@ -7,6 +7,7 @@ import App from './App.js'
 
 let store = createStore(calc)
 
+if(document.getElementById('CalcApp'))
 render(
   <Provider store={store}>
   <App />

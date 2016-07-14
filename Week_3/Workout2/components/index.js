@@ -7,6 +7,7 @@ import App from './App.js'
 
 let store = createStore(todoApp)
 
+if(document.getElementById('TodoApp'))
 render(
   <Provider store={store}>
   <App />

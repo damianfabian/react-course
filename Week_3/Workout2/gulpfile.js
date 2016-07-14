@@ -35,7 +35,7 @@ function vendor (){
 
 function app(){
   browserify({
-    entries: ['./public/js/src/app.jsx','./redux/components/index.js'],
+    entries: ['./public/js/src/app.jsx','./redux/components/index.js','./components/index.js'],
     extensions: ['.js', '.jsx'],
     debug: true
   })
@@ -51,7 +51,12 @@ function app(){
   
 };
 
-gulp.task('bundle', function() {
+gulp.task('copyjs', function() {
+    gulp.src(['./node_modules/jquery/dist/jquery.min.js','./node_modules/bootstrap/dist/js/bootstrap.min.js'])
+    .pipe(gulp.dest('./public/js/build'));
+});
+
+gulp.task('bundle', ['copyjs'] ,function() {
     gutil.log(" Running bundle!!!");
     vendor();
     app();

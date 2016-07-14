@@ -39,6 +39,10 @@ app.get("/sample1", function(req, res){
   res.render("sample1")
 });
 
+app.get("/sample3", function(req, res){
+  res.render("sample3")
+});
+
 app.get("/sample2", function(req, res){
   var ComponentFactory = React.createFactory(cMessage);
   var reactCode = DOM.renderToString(ComponentFactory());
